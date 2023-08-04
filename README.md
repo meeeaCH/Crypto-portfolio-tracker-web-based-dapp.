@@ -14,7 +14,7 @@ This is a simple dApp for tracking your crypto portfolio, it was made as part of
 - Clone it.
 - Register on the required sites. (Moralis, Heroku, MondoDB, Redis)
 - Set up the backend on Heroku (you can run it localy too), use the documentation provided by Moralis.
-- You need to change the backend server IP, the appID in the JS code. (log_in_out.js, maketable.js)
+- You need to change the backend server IP, the appID in the log_in_out.js file.
 - Run the website localy or on a server.
 
 ## License:
