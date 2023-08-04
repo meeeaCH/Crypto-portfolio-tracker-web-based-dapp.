@@ -135,7 +135,6 @@ $(document).ready(function ($) {
     })
 
 })
-
 //Get crypto's value and show it.
 async function getPrice(cAdr, tokenBalance) {
     try {

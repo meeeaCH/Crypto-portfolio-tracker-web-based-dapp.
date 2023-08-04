@@ -22,7 +22,6 @@ export function setMywallet(user) {
 }
 
 
-
 //Shows the chosen network.
 export function changeDropdown(network) {
     let helper = document.getElementById("btn_drop");

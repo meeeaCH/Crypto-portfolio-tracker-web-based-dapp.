@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-
   //Sign in and out buttons.
   document.querySelector("#btn_meta").addEventListener("click", () => {
     metaLogin();

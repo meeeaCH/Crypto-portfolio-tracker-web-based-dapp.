@@ -87,7 +87,6 @@ function afterLogin(user) {
 
 
 
-
 /* Sign out*/
 export async function logout() {
   try {

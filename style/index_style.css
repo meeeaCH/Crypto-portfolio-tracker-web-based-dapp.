@@ -13,6 +13,7 @@ body {
     line-height: 1.2;
 }
 
+
 /*Loading the site like this so the side menu doesn't shown while loading.*/
 .preload * {
     transition: none !important;
