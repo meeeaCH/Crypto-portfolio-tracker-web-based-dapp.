@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="us-HU">
+<head>
+    <title>Opulents</title>
+    <meta name="keywords" content="Opulent, Opulents, CRYPTO, crypto, wallet, WALLET, cryptowallet, wallet checker, moralis, dApp, free, Wallet Connect, Metamask, Web3, finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Free cypto wallet checker dApp.">
+    <meta name="author" content="Krisztián Pfeifer">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon.png" sizes="16x16" />
+    <!--Google Material Icon called-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google Fonts caleed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap" rel="stylesheet">
+    <!--Own CSS called-->
+    <link rel="stylesheet" href="../style/index_style.css">
+</head>
+
+<body class="preload">
+    <header class="header">
+
+        <button class="header__button" id="btn_Nav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <button class="header__meta" id="btn_meta" type="button">
+            <img src="../assets/metamask_logo.png" alt="Metamask Login">
+        </button>
+
+        <button class="header__wallet" id="btn_walletc" type="button">
+            <img src="../assets/walletconnect.png" alt="WalletConnect Login">
+        </button>
+
+        <button class="header__logout" id="btn_logout" type="button">
+            <i class="material-icons">logout</i>
+        </button>
+
+
+        <div class="header__brand">
+            <img src="../assets/logo2.png" alt="Opulent">
+            Beta v0.1
+        </div>
+        <p class="myWallet" id="myWallet"></p>
+
+    </header>
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="index.html" class="nav__link">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a href="about.html" class="nav__link">
+                <i class="material-icons">info</i>
+                About
+            </a>
+            <div class="menu__message">
+                <p>
+                    OPULENTS Beta v0.1<br>
+                    Made by Krisztián Pfeifer.
+                </p>
+            </div>
+        </div>
+        <nav class="nav__overlay"></nav>
+    </nav>
+
+
+    <main>
+        <div class="control_panel">
+            <div class="btn_panel">
+                <button class="btn_controls" id="btn_balance" type="button">
+                    <i class="material-icons">account_balance_wallet</i>
+                    Your Tokens
+                </button>
+                <button class="btn_controls" id="btn_listhidden" type="button">
+                    <i class="material-icons">format_list_bulleted</i>
+                    List Hidden
+                </button>
+                <button class="btn_controls" id="btn_clearhidden" type="button">
+                    <i class="material-icons">clear</i>
+                    Clear Hidden
+                </button>
+            </div>
+
+            <div class="input_panel">
+                <input type="text" placeholder="Wallet Address" name="Wallet Address" id="inputWAddress"
+                    class="inputWAddress">
+                <button class="btn_controls btn_input" id="btn_fieldBalance" type="button">
+                    <i class="material-icons">account_balance_wallet</i>
+                    Get Tokens
+                </button>
+            </div>
+
+            <div class="dropdown">
+                <button id="btn_drop" class="btn_drop">Network: BSC</button>
+                <div class="dropdown-content">
+                    <button class="btn_controls" id="btn_bsc">BSC Network</button>
+                    <button class="btn_controls" id="btn_eth">ETH Network</button>
+                    <button class="btn_controls" id="btn_matic">MATIC Network</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="content_panel">
+            <div class="left_adv">
+                <div class="adv"> <img src="../assets/ad.png" alt=""></div>
+            </div>
+
+
+            <div class="Balance_Table">
+                <table id="Balance_Table">
+                    <thead>
+                        <tr class="wTable_header" id="wTable_header">
+                            <td>&nbsp;</td>
+                            <td><b>Name</b></td>
+                            <td><b>Balance</b></td>
+                            <td><b>Symbol</b></td>
+                            <td><b>Token Address</b></td>
+                            <td><b>Value ($)</b></td>
+                            <td><b>&nbsp;</b></td>
+                            <td><b>Scans</b></td>
+                        </tr>
+                    </thead>
+                    <tbody class="WalletTable" id="WalletTable">
+                    </tbody>
+                </table>
+
+
+
+            </div>
+            <div class="right_adv">
+                <div class="adv"> <img src="../assets/ad.png" alt=""></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom_txt">
+                <img src="../assets/moralis_logo.png" alt="Moralis">
+            </div>
+        </div>
+
+
+    </main>
+    <!--WalletConnect's JS called-->
+    <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.7.8/web3-provider.min.js"></script>
+    <!--Moralis API called-->
+    <script src="https://unpkg.com/moralis-v1@1.11.0/dist/moralis.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!--Program starting point called-->
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
